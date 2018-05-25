@@ -21,12 +21,10 @@ public class Inserting {
 		int temp= orderedArray[0].compareTo(orderedArray[orderedArray.length-1]);
 		for(int j=0;j<orderedArray.length;j++) {
 			int var = orderedArray[j].compareTo(string);
-			if(var<temp) {
-				temp = var;
-				i = j;
+			if(var>0) {
+				i=j;
 			}
 		}
-		System.out.println(i);
 		if(i<0) {
 			i=orderedArray.length;
 		}
